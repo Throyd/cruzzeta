@@ -27,6 +27,12 @@
 				</div>
 			</div>
 			<div class="uk-width-1-1@m" id="reviews">
+				{% assign reviews = site.articles | find_exp:"item", "item.game-id == page.game-id" %}
+				{% for review in reviews % }
+				<li>
+					{{review.name}}
+				</li>
+				{% endfor %}
 			</div>
 		</div>		
 	</body>
