@@ -36,20 +36,46 @@
 
 				{% assign reviews = site.articles | where_exp:"item", "item.game-id == page.game-id" | "item.type == review" %}		
 
-				<ul uk-accordion="multiple: true">
-					{% for review in reviews %}
-					<li class="uk-open">
-						<div class="uk-card">
-							<div class="uk-card-header" href="#">
-								{{review.name}}
-							</div>
-						</div>
-						
-						<div class="uk-accordion-content">
-							{{review.content}}
-						</div>
-					{% endfor %}
+
+				<ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
+					<li><a href="#">Análisis</a></li>
+					<li><a href="#">Guía</a></li>
+					
 				</ul>
+				
+				<ul class="uk-switcher uk-margin">
+					<li id="reviews">
+						<ul uk-accordion="multiple: true">
+							{% for review in reviews %}
+							<li class="uk-open">
+								<div class="uk-card">
+									<div class="uk-card-header" href="#">
+										<div class="uk-grid uk-padding-small uk-margin-remove" >
+											<div class="uk-width-4-5@m">
+												<h3>Análisis de {{page.name}} por {{review.user-id}}</h3>
+											</div>
+											<div class="uk-width-1-5@m">
+												<h3>{{review.score}}</h3>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							
+								<div class="uk-accordion-content">
+									{{review.content}}
+								</div>
+							{% endfor %}
+						</ul>
+					</li>
+					<li id="guide"></li>
+
+				</ul>
+
+
+
+
+
 
 			</div>
 		</div>		
