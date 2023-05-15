@@ -1,0 +1,28 @@
+# Site settings
+title: +z
+
+collections:
+  articles:
+    collections_dir: _articles
+  authors:
+    collections_dir: _authors
+  games:
+    collections_dir: _games
+    output: true
+  systems:
+    collections_dir: _systems
+    output: true
+
+defaults:
+  - scope:
+      path: ''
+      type: 'games'
+    values:
+      layout: 'game'
+  - scope:
+      path: ''
+      type: 'systems'
+    values:
+      layout: 'sytem'
+
+exclude: [.scss, README.md, package.json]
