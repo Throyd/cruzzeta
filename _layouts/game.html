@@ -47,21 +47,23 @@
 					<li id="reviews">
 						<ul uk-accordion="multiple: true">
 							{% for review in reviews %}
-							<li class="uk-open">
+							<li class="">
 								<div class="uk-card uk-padding-remove uk-margin-remove">
 									<div class="uk-card-header uk-padding-remove uk-margin-remove" href="#">
-										<div class="uk-grid uk-padding-remove uk-margin-remove" >
+										<div class="uk-grid-match uk-padding-remove uk-margin-remove" >
 											<div class="uk-width-4-5@m uk-margin-remove uk-padding-remove">
-												<h3>Análisis de {{page.name}} por {{review.user-id}}</h3>
+												<h3>Análisis de {{page.name}}</h3>
+												<h4>por {{review.user-id}}</h4>
+												<p class="uk-article-meta">Publicado el {{review.date}}</p>
 											</div>
-											<div class="uk-width-1-5@m uk-text-light uk-background-primary">
-												<h3>{{review.score}}</h3>
+											<div class="uk-width-1-5@m uk-ligth uk-background-primary uk-text-center">
+												<span style="font-size: 48px;">{{review.score}}<style>
 											</div>
 											
 										</div>
 									</div>
 								</div>
-							
+								<hr class="uk-divider-icon">
 								<div class="uk-accordion-content">
 									{{review.content}}
 								</div>
