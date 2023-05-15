@@ -26,13 +26,33 @@
 					</div>
 				</div>
 			</div>
-			<div class="uk-width-1-1@m" id="reviews">
-				{% assign reviews = site.articles | find_exp:"item", "item.game-id == page.game-id" %}
-				{% for review in reviews %}
-				<li>
-					{{review.name}}
-				</li>
-				{% endfor %}
+
+
+
+
+
+
+			<div class="uk-width-1-1@m">
+
+				{% assign reviews = site.articles | where_exp:"item", "item.game-id == page.game-id" | "item.type == review" %}		
+
+
+				<ul uk-tab uk-switcher="animation: uk-animation-fade">
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#">Guide</a></li>
+				</ul>
+				
+				<ul class="uk-switcher uk-margin">
+					<li id="reviews">
+						{% for review in reviews %}
+						<li>
+							{% include review.html %}
+						</li>
+						{% endfor %}
+					</li>
+					<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+				</ul>
+
 			</div>
 		</div>		
 	</body>
