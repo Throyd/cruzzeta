@@ -56,15 +56,24 @@
 												<h4 class="uk-margin-remove uk-padding-remove">por {{review.user-id}}</h4>
 												<span class="uk-margin-remove uk-padding-remove">Publicado el {{review.date}}</span>
 											</div>
-											<div class="uk-background-primary uk-text-center" style="height:108px; width:108px">
-												<span style="font-size: 70px">{{review.score}}</span>
+											<div class="uk-background-primary uk-margin-remove uk-padding-remove uk-text-center uk-light" style="height:108px; width:108px">
+												<span style="font-size: 70px">{{review.score}} </span>
 											</div>
 										</div>
 									</div>
 								</div>
-								<hr class="uk-divider-icon">
+								
 								<div class="uk-accordion-content">
 									{{review.content}}
+								</div>
+							</li>
+							
+							<hr class="uk-divider-icon">
+
+							<li class="uk-open">
+								<a class="uk-accordion-title" href="#">Item 1</a>
+								<div class="uk-accordion-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 								</div>
 							</li>
 							{% endfor %}
