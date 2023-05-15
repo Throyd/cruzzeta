@@ -36,27 +36,19 @@
 
 				{% assign reviews = site.articles | where_exp:"item", "item.game-id == page.game-id" | "item.type == review" %}		
 
-
-				<ul uk-tab uk-switcher="animation: uk-animation-fade">
-					<li><a href="#">Reviews</a></li>
-					<li><a href="#">Guide</a></li>
-				</ul>
-				
-				<ul class="uk-switcher uk-margin">
-					<li id="reviews">
-						<div class=""></div>
-							{% for review in reviews %}
-								<li>
-									{{review.name}}
-								</li>
+				<ul uk-accordion="multiple: true">
+					{% for review in reviews %}
+					<li class="uk-open">
+						<div class="uk-card">
+							<div class="uk-card-header" href="#">
+								{{review.name}}
+							</div>
 						</div>
-						{% endfor %}
-					</li>
-					<li id="Guide">
-						<div class="">
-							<li>JHIN MOLA</li>
+						
+						<div class="uk-accordion-content">
+							{{review.content}}
 						</div>
-					</li>
+					{% endfor %}
 				</ul>
 
 			</div>
