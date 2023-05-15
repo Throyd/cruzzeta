@@ -49,9 +49,10 @@
 							{% for review in reviews %}
 							<li class="">
 								<div class="uk-card uk-padding-remove uk-margin-remove">
-									<div class="uk-card-header uk-padding-remove uk-margin-remove" href="#">
+									<div class="uk-card-header uk-padding-remove uk-margin-remove uk-accordion-title" href="#">
 										<div class="uk-grid uk-grid-match">
 											<div class="uk-width-expand">
+												<a class="uk-accordion-title" href="#">Item 1</a>
 												<h3 class="uk-margin-remove uk-padding-remove">Análisis de {{page.name}}</h3>
 												<h4 class="uk-margin-remove uk-padding-remove">por {{review.user-id}}</h4>
 												<span class="uk-margin-remove uk-padding-remove">Publicado el {{review.date}}</span>
@@ -67,7 +68,7 @@
 									{{review.content}}
 								</div>
 							</li>
-							
+
 							<hr class="uk-divider-icon">
 
 							<li class="uk-open">
