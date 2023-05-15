@@ -23,6 +23,6 @@ defaults:
       path: ''
       type: 'systems'
     values:
-      layout: 'sytem'
+      layout: 'system'
 
 exclude: [.scss, README.md, package.json]
