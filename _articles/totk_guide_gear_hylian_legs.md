@@ -15,7 +15,7 @@ stats-level-3: "?"
 bonus: "?"
 
 description: Prenda tradicional en todo Hyrule. Gracias a su tejido, resistente a la par que suave, resulta bastante cómoda.
-icon: https://throyd.github.io/cruzzeta/images/tloz-totk/Hylian_Torusers_Icon.png
+icon: https://throyd.github.io/cruzzeta/images/tloz-totk/Hylian_Trousers_Icon.png
 ---
 <strong>Adquisición</strong>
 Se puede comprar en <strong>Fuerte Vigia</strong> por <strong>70 </strong>
