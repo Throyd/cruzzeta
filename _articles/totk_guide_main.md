@@ -72,10 +72,10 @@ category: main
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png">
                                                 </td>
                                                 <td>
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Armor_Icon.png?raw=true" width:"16">  
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png">
                                                     {{gear.stats-level-1}}
                                                 </td>
                                                 <td>
