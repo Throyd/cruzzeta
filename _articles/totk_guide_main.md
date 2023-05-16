@@ -16,7 +16,7 @@ Esto es la guía
 <h4 id="tips">Consejos</h4>
 <h4 id="quests">Misiones</h4>
 <h4 id="sanctuaries">Santuarios</h4>
-<h4 id="templeS">Templos</h4>
+<h4 id="temples">Templos</h4>
 <h4 id="gears">Equipo</h4>
     a <br/>
     a <br/>

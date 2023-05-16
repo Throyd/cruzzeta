@@ -34,7 +34,7 @@
 
 				{% assign guides-game-not-filtered = site.articles | where_exp: "item", "item.game-id == page.game-id" %}
 				{% assign guides-type-not-filtered = guides-game-not-filtered | where_exp: "item", "item.type == 'guide'" %}
-				{% assign guide = guides-game-not-filtered | "item", "item.category == 'main-page'" %}
+				{% assign guide = guides-game-not-filtered | find_exp: "item", "item.category == 'main-page'" %}
 				
 				<br/>GUIDE NOT FILTERED<br/>
 				{% for guide1 in guides-game-not-filtered %}
