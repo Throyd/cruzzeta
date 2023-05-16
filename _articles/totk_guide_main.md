@@ -10,7 +10,7 @@ category: main
 {% assign sanctuaries = guides-type-not-filtered | where_exp: "item", "item.category == 'sanctuaries'" %}
 {% assign temples = guides-type-not-filtered | where_exp: "item", "item.category == 'temples'" %}
 {% assign gears = guides-type-not-filtered | where_exp: "item", "item.category == 'gears'" %}
-{$ assign gear-id = 0}
+{% assign gear-id = 0 %}
 
 <div>
 
