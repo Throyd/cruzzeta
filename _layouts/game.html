@@ -34,7 +34,9 @@
 
 			<div class="uk-width-1-1@m" id="game-content">
 
-				{% assign reviews = site. articles | where_exp:"item", "item.navigation == 'review'" and "item.game-id == page.game-id" %}
+				{% assign reviews-not-filtered = site.articles | where_exp:"item", "item.game-id == page.game-id" %}
+				{% assign reviews = reviews-not-filtered | where_exp:"item", "item.type == 'review"}}
+
 
 				
 
