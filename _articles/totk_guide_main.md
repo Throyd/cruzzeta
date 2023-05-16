@@ -46,7 +46,7 @@ category: main
 
                                     <strong>Adquisición:</strong> {{gear.adquisition}}
                                     
-                                    <table class="uk-table uk-table-middle uk-table-divider">
+                                    <table class="uk-table uk-table-middle uk-table-divider uk-muted">
                                         <thead>
                                             <tr>
                                                 <th>
