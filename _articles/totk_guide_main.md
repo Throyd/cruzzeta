@@ -82,23 +82,30 @@ category: main
                                                     {{gear.stats-level-1}}
                                                 </td>
                                                 <td class="uk-background-primary">
+
+
+
+
+
+
                                                    {% assign crude-materials = gear.materials-level-1  | split: ", "%}
 
-                                                    {% for crude-material in crude-materials %}
+
                                                     CRUDE MATERIAL
-                                                    {{ crude-materials }}
+                                                    {% for crude-material in crude-materials %}
+                                                        {{ crude-materials }} <br />
+                                                    {% endfor %}          
+
+                                                    {% for crude-material in crude-materials %}                                        
                                                     
-                                                    {% assign materials = crude-material | split: " x "  %}
+                                                        {% assign materials = crude-material | split: " x "  %}
+
+                                                        MATERIALS
+                                                        {% for material as materials %}
+                                                        {{material} <br>
+                                                        {%end for %}
+
                                                     
-
-                                                       {% for materials in array limit:1 %}
-
-                                                        {assign material = site.articles | find_exp "item", "materials == material-id"}
-                                                        {{material.name}} X
-
-                                                       {% endfor %}
-                                                    {% for materials in array limit:2 %}
-                                                    {{materials}}
                                                    {% endfor %}
                                                    {% endfor %}                                               
                                                 
