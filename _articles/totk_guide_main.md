@@ -30,12 +30,13 @@ category: main
                             <div class="uk-card uk-card-default uk-padding-small uk-margin-remove" uk-toggle="target: #gear-{{gear-id}}-body">
                                 <div class="uk-card-header">
                                     <div class="uk-width-2-3 uk-match">
-                                        <h3 class="uk-card-title uk-margin-remove-bottom">
+                                        <h5 class="uk-margin-remove-bottom">
                                             {{gear.name}}
-                                        </h3>
+                                        </h5>
                                     </div>
                                     <div class="uk-width-1-3">
-                                    <img src="{{gear.icon}}">
+
+                                    <img src="{{site.baseurl | prepend: site.url}}_images/{{gear.icon}}">
                                     </div>
                                 </div> 
                                 <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-small" hidden>

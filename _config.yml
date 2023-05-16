@@ -1,5 +1,8 @@
 # Site settings
 title: +z
+url: 'https://throyd.github.io/' # your main domain
+baseurl: 'cruzzeta/' # if you're using custom domain keep this blank example: baseurl: ''
+
 
 collections:
   articles:
