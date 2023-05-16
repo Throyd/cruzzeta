@@ -22,7 +22,7 @@ category: main
                 <h4 id="sanctuaries">Santuarios</h4>
                 <h4 id="temples">Templos</h4>
                 <h4 id="gears">Equipo</h4>
-                <div class="uk-grid uk-margin-remove uk-padding-remove">
+                <div class="uk-grid uk-margin-remove uk-padding-remove uk-grid-small">
                     {% for gear in gears %}
 
                         {% assign gear-id = gear-id | plus: 1 %}
@@ -34,7 +34,7 @@ category: main
                                             <strong>{{gear.name}}</strong>
                                         </p>
                                     </div>
-                                    <div class="uk-width-1-1 uk-card-media-right uk-cover-container">
+                                    <div class="uk-width-1-4 uk-card-media-right uk-cover-container">
                                             <img src="{{gear.icon}}">
                                     </div>
                                 </div> 
@@ -99,16 +99,15 @@ category: main
 
                                                         REAL BAKED: <br>
                                                         {% for material in baked-materials limit:1 %}
-                                                            {{material}} x
+                                                            {% assign material = site.articles | find_exp: "item", "item.material-id == material"%} 
+                                                            {{material.name}}
+                                                             x
                                                         {% endfor %}  
-                                                                                                                                               {% for quantity in baked-materials limit:1 offset: 1 %}
+                                                            {% for quantity in baked-materials limit:1 offset: 1 %}
                                                             {{quantity}} 
                                                         {% endfor %}  
-
                                                         {% endfor %}                                             
                                                 
-
-
 
 
 
