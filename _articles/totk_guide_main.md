@@ -38,13 +38,13 @@ category: main
                                             <img src="{{gear.icon}}">
                                     </div>
                                 </div> 
-                                <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-small" hidden>
+                                <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-remove" hidden>
                                     
-                                    <p>{{gear.description}}</p>
+                                    <p class="uk-padding-small">{{gear.description}}</p>
 
                                     <strong>Adquisición:</strong> {{gear.adquisition}}
                                     
-                                    <table class="uk-table-justify uk-table-divider uk-text-center uk-light">
+                                    <table class="uk-table-justify uk-table-divider uk-text-center uk-light uk-padding-small">
                                         <thead class="uk-dark">
                                             <tr>
                                                 <th>
