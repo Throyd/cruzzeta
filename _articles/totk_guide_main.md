@@ -30,7 +30,7 @@ category: main
                             <div class="uk-card uk-card-default uk-padding-remove uk-margin-remove" uk-toggle="target: #gear-{{gear-id}}-body">
                                 <div class="uk-grid uk-margin-remove uk-padding-remove">
                                     <div class="uk-width-3-4">
-                                        <p class="uk-margin-remove-bottom">
+                                        <p class="uk-margin-remove-bottom uk-padding-small">
                                             <strong>{{gear.name}}</strong>
                                         </p>
                                     </div>
@@ -40,7 +40,9 @@ category: main
                                 </div> 
                                 <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-remove" hidden>
                                     
-                                    <p class="uk-padding-small">{{gear.description}}</p>
+                                    <p class="uk-padding-small">
+                                        {{gear.description}}
+                                    </p>
 
                                     <strong>Adquisición:</strong> {{gear.adquisition}}
                                     
@@ -79,7 +81,7 @@ category: main
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">  
                                                 </td>
                                                 <td class="uk-background-primary">
-                                                    {{gear.materials-stats-level-1}}
+                                                    {{gear.materials-level-1}}
                                                 </td>
                                             </tr>
                                             <tr>
@@ -92,7 +94,7 @@ category: main
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">  
                                                 </td>
                                                 <td class="uk-background-primary">
-                                                    {{gear.materials-stats-level-2}}
+                                                    {{gear.materials-level-2}}
                                                 </td>
                                             </tr>
                                             <tr>
@@ -106,7 +108,7 @@ category: main
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">  
                                                 </td>
                                                 <td class="uk-background-primary">
-                                                    {{gear.materials-stats-level-3}}
+                                                    {{gear.materials-level-3}}
                                                 </td>
                                             </tr>                                           
                                         </tbody>
