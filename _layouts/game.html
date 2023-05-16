@@ -34,7 +34,7 @@
 
 				{% assign guide-game-not-filtered = site.articles | where_exp:"item", "item", "item.game-id == page.game-id" %}
 				{% assign guide-type-not-filtered = guide-game-not-filtered | where_exp:"item", "item.type == 'guide'"%}
-				{% assign guide = guide-type-not-filtered | where_exp:"item", "item.category == 'main-page'"%}
+				{% assign guide = guide-type-not-filtered | find_exp:"item", "item.category == 'main-page'"%}
 				
 		
 				<ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
