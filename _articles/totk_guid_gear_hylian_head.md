@@ -3,7 +3,7 @@ game-id: TLOZ-TOTK
 name: Capucha hyliana
 type: guide
 category: gears
-icon: tloz-totk/Hylian_Hood_Icon.png
+icon: https://raw.githubusercontent.com/Throyd/cruzzeta/main/_images/tloz-totk/Hylian_Hood_Icon.png
 ---
 Una capucha con motivos Hylianos.
 

@@ -28,15 +28,14 @@ category: main
                         {% assign gear-id = gear-id | plus: 1 %}
                         <div class="uk-width-1-2 uk-margin-remove uk-padding-remove">
                             <div class="uk-card uk-card-default uk-padding-small uk-margin-remove" uk-toggle="target: #gear-{{gear-id}}-body">
-                                <div class="uk-card-header">
+                                <div>
                                     <div class="uk-width-2-3 uk-match">
                                         <h5 class="uk-margin-remove-bottom">
                                             {{gear.name}}
                                         </h5>
                                     </div>
                                     <div class="uk-width-1-3">
-
-                                    <img src="{{site.baseurl | prepend: site.url}}_images/{{gear.icon}}">
+                                        <img src="{{gear.icon}}">
                                     </div>
                                 </div> 
                                 <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-small" hidden>
