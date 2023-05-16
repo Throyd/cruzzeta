@@ -100,7 +100,7 @@ category: main
                                                     {% for materials in array limit:2 %}
                                                     {{materials}}
                                                    {% endfor %}
-                                               
+                                                   {% endfor %}                                               
                                                 
 
 
