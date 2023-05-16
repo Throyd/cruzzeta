@@ -156,8 +156,8 @@ category: main
                                     </table>
                                 </div>
                             </div>
-                       </div>
-                       </div>
+                       
+                       
 
                     {% endfor %}
                 </div>
