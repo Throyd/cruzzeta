@@ -7,5 +7,5 @@ category: material
 material-source: currency
 source: Varios
 description: La moneda principal del juego.
-icon: https://raw.githubusercontent.com/Throyd/cruzzeta/main/_images/tloz-totk/Rupee.png
+icon: https://throyd.github.io/cruzzeta/images/tloz-totk/Rupee_Green_Icon.png
 ---

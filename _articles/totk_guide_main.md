@@ -95,12 +95,12 @@ category: main
                                                             {{material-id}}
                                                             {% assign materials = site.articles | where_exp: "item", "item.material-id == material-id" %} 
                                                             {% for material in materials %}
-                                                                <img src="{{material.icon}}" alt="{{material.name}}" height="18" width="18">
+                                                                <img src="{{material.icon}}" alt="{{material.name}}" height="18" width="18" uk-tooltip="{{material.name}}">
                                                             x
                                                             {% endfor %}
                                                         {% endfor %}  
                                                             {% for quantity in baked-materials limit:1 offset: 1 %}
-                                                            {{quantity}} 
+                                                            {{quantity}} <br />
                                                         {% endfor %}  
                                                         {% endfor %}                                             
                                                 
@@ -154,8 +154,7 @@ category: main
                                             </tr>                                           
                                         </tbody>
                                     </table>
-                                </div>
-                            </div>
+
                        
                        
 
