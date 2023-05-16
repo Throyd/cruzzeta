@@ -95,12 +95,12 @@ category: main
                                                         
                                                         REAL BAKED: <br>
                                                     {% for 1 in (baked-materials) %}
-                                                        {{ baked-materials }}
+                                                        {{ 1 }}
                                                     {% endfor %}
 
                                                         X
                                                     {% for 2 in (baked-materials) %}
-                                                        {{ baked-materials }}
+                                                        {{ 2 }}
                                                     {% endfor %}
 
 
