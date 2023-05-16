@@ -1,5 +1,5 @@
 ---
-game-id: id: TLOZ-TOTK
+game-id: TLOZ-TOTK
 title: Página principal de la guía
 type: guide
 navigation: main-page
