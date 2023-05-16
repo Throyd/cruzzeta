@@ -94,7 +94,7 @@ category: main
                                                     {% assign baked-materials = crude-material | split: " x "%}
                                                         
                                                         REAL BAKED: <br>
-                                                        {% for material in baked-materials limit:1}
+                                                        {% for material in baked-materials limit:1 %}
                                                             {{material}}
                                                         {% endfor }                                               
                                                 
