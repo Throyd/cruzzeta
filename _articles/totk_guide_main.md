@@ -101,7 +101,7 @@ category: main
 
                                                         MATERIALS<br />
                                                         {% for material as materials %}
-                                                        {{material} <br>
+                                                        {{material}} <br>
                                                         {%end for %}
 
                                                     
