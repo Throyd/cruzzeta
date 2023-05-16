@@ -91,12 +91,10 @@ category: main
                                                    {% assign crude-materials = gear.materials-level-1  | split: ", "%}
 
 
-                                                    CRUDE MATERIAL
                                                     {% for crude-material in crude-materials %}
                                                         CRUDE MATERIAL <br />
-                                                        {{ crude-material }} <br />
-                               
-                                                    
+                                                        {{crude-material}} <br />
+
                                                         {% assign materials = crude-material | split: " x "  %}
 
                                                         MATERIALS<br />
