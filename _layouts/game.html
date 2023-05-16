@@ -37,7 +37,8 @@
 
 				{% assign guide = site.articles | find_exp:"item", "item.game-id == page.game-id AND item.type == 'guide' AND item.navigation == 'main-page'" %}		
 
-				{% assign reviews = site.articles | where_exp: "item", "item.game-id == page.game-id and item.type == 'review'" %}
+				
+				{{ assign reviews = site.articles | where_exp: "item", "item.game-id == page.game-id and item.type == 'review'" }}
 
 
 				<ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
