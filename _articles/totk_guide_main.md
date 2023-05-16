@@ -30,12 +30,30 @@ category: main
                 <h4 id="gears">Equipo</h4>
                 <div class="uk-grid uk-margin-remove uk-padding-remove">
                     {% for gear in gears %}
-                        {% assign gear-id = gear-id + 1 %}
+                        {% increment gear-id %}
+
+                        <div class="uk-card uk-card-default uk-width-1-2@m">
+                        <div class="uk-card-header uk-toggle="target: #gear-{{gear-id}}-body"">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg" alt="Avatar">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="gear-{{gear-id}}-body" class="uk-card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+
+
                         <div class="uk-width-1-2">
-                            <div class="uk-card uk-card-default" uk-toggle="target: #toggle-usage>
+                            <div class="uk-card uk-card-default" uk-toggle="target: #gear-{{gear-id}}-body">
                                 <div class="uk-card-header">
                                     <h3 class="uk-card-header">
-                                    {{gear.title}}
+                                        {{gear.name}}
                                     </h3>
                                 </div> 
                                 <div id="gear-{{gear-id}}-body" class="uk-card-body">
