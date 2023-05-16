@@ -13,13 +13,7 @@ category: main
 {% assign temples = guides-type-not-filtered | where_exp: "item", "item.category == 'temples'" %}
 {% assign gears = guides-type-not-filtered | where_exp: "item", "item.category == 'gears'" %}
 {% assign gear-id = 0 %}
-
-
-
-
-
 <div>
-
     <div class="uk-grid">
         <div class="uk-width-3-4">
             <div>
@@ -31,15 +25,15 @@ category: main
                 <div class="uk-grid uk-margin-remove uk-padding-remove">
                     {% for gear in gears %}
 
-                        {% increment gear-id %}
+                        {% assign gear-id = gear-id | plus: 1 %}
                         <div class="uk-width-1-2">
-                            <div class="uk-card uk-card-default" uk-toggle="target: #gear-{{gear-id}}-body">
+                            <div class="uk-card uk-card-default uk-padding-small" uk-toggle="target: #gear-{{gear-id}}-body">
                                 <div class="uk-card-header">
                                     <h3 class="uk-card-title uk-margin-remove-bottom">
                                         {{gear.name}}
                                     </h3>
                                 </div> 
-                                <div id="gear-{{gear-id}}-body" class="uk-card-body">
+                                <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-small">
                                     {{gear.content}}
                                 </div>
                             </div>
