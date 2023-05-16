@@ -1,6 +1,6 @@
 ---
 game-id: TLOZ-TOTK
-name: Túnica hyliana
+name: Pantalón hyliano
 type: guide
 category: gears
 slot: chest
