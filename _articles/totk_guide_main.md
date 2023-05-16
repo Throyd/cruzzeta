@@ -6,7 +6,7 @@ category: main-page
 ---
 Esto es la guía
 <div class="uk-grid">
-<div class="uk-width-3-4@m uk-card uk-card-default uk-card-body uk-text-center">
+<div class="uk-width-3-4@m">
 {% assign tips = site.articles | find_exp:"item", "item.game-id == page.game-id" | "item.type == guide" | "item.category == tip" %}
 {% assign tips = site.articles | find_exp:"item", "item.game-id == page.game-id" | "item.type == guide" | "item.category == mission" %}
 {% assign tips = site.articles | find_exp:"item", "item.game-id == page.game-id" | "item.type == guide" | "item.category == sanctuary" %}
