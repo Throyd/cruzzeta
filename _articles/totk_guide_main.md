@@ -94,8 +94,9 @@ category: main
                                                     {% assign baked-materials = crude-material | split: " x "%}
                                                         
 
-                                                        {% for line in baked-materials limit:1 %}
-                                                            {% assign material = site.articles | find: "item.material-id" "line" %} 
+                                                        {% for material-id in baked-materials limit:1 %}
+                                                            {{material-id}}
+                                                            {% assign material = site.articles | find: "item.material-id", "material-id" %} 
                                                             {{material.name}}
                                                              x
                                                         {% endfor %}  
