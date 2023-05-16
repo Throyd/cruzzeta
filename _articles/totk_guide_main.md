@@ -100,7 +100,8 @@ category: main
                                                         REAL BAKED: <br>
                                                         {% for material in baked-materials limit:1 %}
                                                             {{material}}
-                                                        {% endfor %}                                               
+                                                        {% endfor %}  
+                                                        {% endfor %}                                             
                                                 
 
 
