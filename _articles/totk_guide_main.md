@@ -26,15 +26,15 @@ category: main
                     {% for gear in gears %}
 
                         {% assign gear-id = gear-id | plus: 1 %}
-                        <div class="uk-width-1-2@m uk-margin-remove uk-padding-remove">
+                        <div class="uk-width-4-5@m uk-margin-remove uk-padding-remove">
                             <div class="uk-card uk-card-default uk-padding-remove uk-margin-remove" uk-toggle="target: #gear-{{gear-id}}-body">
-                                <div class="uk-grid uk-margin-remove uk-padding-remove">
+                                <div class="uk-grid uk-padding-remove">
                                     <div class="uk-width-3-4">
-                                        <p class="uk-margin-remove-bottom uk-padding-small">
+                                        <p class="uk-margin-remove uk-padding-small">
                                             <strong>{{gear.name}}</strong>
                                         </p>
                                     </div>
-                                    <div class="uk-width-1-4 uk-card-media-right uk-cover-container">
+                                    <div class="uk-width-1-1 uk-card-media-right uk-cover-container">
                                             <img src="{{gear.icon}}">
                                     </div>
                                 </div> 
@@ -173,7 +173,7 @@ category: main
                 </div>
             </div>
         </div>
-        <div class="uk-width-1-4@m uk-first@m">
+        <div class="uk-width-1-5@m uk-first@m">
             <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: !.uk-height-large; offset: 80">
                 <ul class="uk-nav-default" uk-nav>
                     <li class="uk-active">
