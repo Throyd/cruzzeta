@@ -1,6 +1,6 @@
 ---
 game-id: TLOZ-TOTK
-title: Página principal de la guía
+name: Página principal de la guía
 type: guide
 category: main-page
 ---
