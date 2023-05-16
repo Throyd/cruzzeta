@@ -46,7 +46,7 @@ category: main
 
                                     <strong>Adquisición:</strong> {{gear.adquisition}}
                                     
-                                    <table class="uk-table-justify uk-table-divider uk-text-center uk-light uk-padding-small">
+                                    <table class="uk-table uk-table-divider uk-text-center uk-light uk-padding-small">
                                         <thead class="uk-dark">
                                             <tr>
                                                 <th>
@@ -65,8 +65,9 @@ category: main
                                                 <td class="uk-background-primary">
                                                 </td>
                                                 <td class="uk-background-primary">
-                                                    {{gear.stats-level-0:}}
+                                                    
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">  
+                                                    {{gear.stats-level-0:}}
                                                 </td>
                                                 <td class="uk-background-primary">
                                                     {{gear.material-stats-level-0}}
@@ -77,11 +78,57 @@ category: main
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png"  width="16" height="16">
                                                 </td>
                                                 <td class="uk-background-primary">
-                                                    {{gear.stats-level-1}}
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">  
+                                                    {{gear.stats-level-1}}
                                                 </td>
                                                 <td class="uk-background-primary">
-                                                    {{gear.materials-level-1}}
+                                                   {% assign crude-materials = gear.materials-level-1  | split: ", "%}
+
+                                                    {% for crude-material in crude-materials %}
+                                                    CRUDE MATERIAL
+                                                    {{ crude-materials }}
+                                                    
+                                                    {% assign materials = crude-material | split: " x "  %}
+                                                    
+
+                                                       {% for materials in array limit:1 %}
+
+                                                        {assign material = site.articles | find_exp "item", "materials == material-id"}
+                                                        {{material.name}} X
+
+                                                       {% endfor %}
+                                                    {% for materials in array limit:2 %}
+                                                    {{materials}}
+                                                   {% endfor %}
+                                               
+                                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                   
                                                 </td>
                                             </tr>
                                             <tr>
@@ -90,8 +137,8 @@ category: main
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png"  width="16" height="16">                                                    
                                                 </td>
                                                 <td class="uk-background-primary">
-                                                    {{gear.stats-level-2}}
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">  
+                                                    {{gear.stats-level-2}}
                                                 </td>
                                                 <td class="uk-background-primary">
                                                     {{gear.materials-level-2}}
@@ -104,8 +151,8 @@ category: main
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png"  width="16" height="16">
                                                 </td>
                                                 <td class="uk-background-primary">
-                                                    {{gear.stats-level-3}}
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">  
+                                                    {{gear.stats-level-3}}
                                                 </td>
                                                 <td class="uk-background-primary">
                                                     {{gear.materials-level-3}}
