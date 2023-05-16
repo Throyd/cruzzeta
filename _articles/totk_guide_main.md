@@ -73,9 +73,3 @@ category: main
         </div>
     </div>
 </div>
-
-
-
-
-
-
