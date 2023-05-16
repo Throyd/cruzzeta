@@ -12,6 +12,30 @@ category: main
 {% assign gears = guides-type-not-filtered | where_exp: "item", "item.category == 'gears'" %}
 {% assign gear-id = 0 %}
 
+
+guides-type-not-filtered <br/>
+<ul>
+{% for guide in guides-type-not-filtered %}
+<li>{{guide.name}}</li>
+{% endfor %}
+</ul>
+
+
+TIPS <br/>
+<ul>
+{% for tip in tips %}
+<li>{{tip.name}}</li>
+{% endfor %}
+</ul>
+
+GEARS <br/>
+<ul>
+{% for gear in gears %}
+<li>{{gear.name}}</li>
+{% endfor %}
+</ul>
+
+
 <div>
 
     <div class="uk-grid">
