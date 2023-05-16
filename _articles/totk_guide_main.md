@@ -45,7 +45,7 @@ category: main
                                     <strong>Adquisición:</strong> {{gear.adquisition}}
                                     
                                     <table class="uk-table-justify uk-table-divider uk-text-center uk-light">
-                                        <thead>
+                                        <thead class="uk-dark">
                                             <tr>
                                                 <th>
                                                     Nivel
@@ -60,52 +60,52 @@ category: main
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="uk-background-secondary">
+                                                <td class="uk-background-primary">
                                                 </td>
-                                                <td class="uk-background-secondary">
+                                                <td class="uk-background-primary">
                                                     {{gear.stats-level-0:}}
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">  
                                                 </td>
-                                                <td class="uk-background-secondary">
+                                                <td class="uk-background-primary">
                                                     {{gear.material-stats-level-0}}
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="uk-background-secondary">
+                                                <td class="uk-background-primary">
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png"  width="16" height="16">
                                                 </td>
-                                                <td class="uk-background-secondary">
+                                                <td class="uk-background-primary">
                                                     {{gear.stats-level-1}}
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">  
                                                 </td>
-                                                <td class="uk-background-secondary">
+                                                <td class="uk-background-primary">
                                                     {{gear.materials-stats-level-1}}
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="uk-background-secondary">
-                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">
-                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">                                                       
+                                                <td class="uk-background-primary">
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png" width="16" height="16">
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png" width="16" height="16">                                               
                                                 </td>
-                                                <td class="uk-background-secondary">
+                                               <td class="uk-background-primary">
                                                     {{gear.stats-level-2}}
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16"                                                    
                                                 </td>
-                                                <td class="uk-background-secondary">
+                                                <td class="uk-background-primary">
                                                     {{gear.materials-stats-level-2}}
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="uk-background-secondary">
-                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16"> 
-                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16"> 
-                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">         
+                                                <td class="uk-background-primary">
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png"  width="16" height="16">
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png"  width="16" height="16">
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png"  width="16" height="16">     
                                                 </td>
-                                                <td class="uk-background-secondary">
+                                                <td class="uk-background-primary">
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16"
                                                 {{gear.stats-level-3}}
                                                 </td>
-                                               <td class="uk-background-secondary">
+                                                <td class="uk-background-primary">
                                                     {{materials.stats-level-3}}
                                                 </td>
                                             </tr>                                            
