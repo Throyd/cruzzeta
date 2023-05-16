@@ -43,7 +43,7 @@ category: main
                                     </p>
                                     <p class="uk-padding-small">
                                         <strong>Adquisición:</strong> {{gear.adquisition}}
-                                    <p class="uk-padding-small">
+                                    </p>
                                 </div>
                             </div>
                         </div>
