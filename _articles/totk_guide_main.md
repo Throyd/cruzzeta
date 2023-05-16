@@ -36,7 +36,6 @@ category: main
                                     </div>
                                     <div class="uk-width-1-4 uk-card-media-right uk-cover-container">
                                             <img src="{{gear.icon}}">
-                                        </div>
                                     </div>
                                 </div> 
                                 <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-small" hidden>
