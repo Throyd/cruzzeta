@@ -92,7 +92,10 @@ category: main
 
                                                     {% for crude-material in crude-materials %}
                                                         {{crude-material}}
-
+                                                        {% assign baked-materials = crude-material | split: " x "%}
+                                                        {% for baked-material in baked-materials %}
+                                                        {{baked-material}} <br>
+                                                        {% endfor %}
                                                    {% endfor %}                                               
                                                 
 
