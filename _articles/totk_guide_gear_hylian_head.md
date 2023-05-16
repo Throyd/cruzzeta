@@ -6,7 +6,7 @@ category: gears
 slot: head
 set: Armadura hyliana
 stats-level-0: "3"
-materials-level-1: "???"
+materials-level-1: bokoblin-horn x 5, rupee x 10
 stats-level-1: "5"
 materials-level-2: "???"
 stats-level-2: "?"
