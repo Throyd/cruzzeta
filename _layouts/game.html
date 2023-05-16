@@ -30,7 +30,7 @@
 			<div class="uk-width-1-1@m" id="game-content">
 
 				{% assign reviews-game-not-filtered = site.articles | where_exp:"item", "item.game-id == page.game-id" %}
-				{% assign reviews = reviews-game-not-filtered | where_exp:"item", "item.type == 'review'"}}
+				{% assign reviews = reviews-game-not-filtered | where_exp:"item", "item.type == 'review'"%}
 
 				{% assign guide-game-not-filtered = site.articles | where_exp:"item", "item", "item.game-id == page.game-id" %}
 				{% assign guide-type-not-filtered = guide-game-not-filtered | where_exp:"item", "item.type == 'guide'"%}
