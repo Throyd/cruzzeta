@@ -4,7 +4,9 @@ name: Página principal de la guía
 type: guide
 category: main
 ---
-<h3>{{guide.name}}</h3>
+<h3>Página principal de la guía</h3>
+{% assign guides-game-not-filtered = site.articles | where_exp: "item", "item.game-id == page.game-id" %}
+{% assign guides-type-not-filtered = guides-game-not-filtered | where_exp: "item", "item.type == 'guide'" %}
 {% assign tips = guides-type-not-filtered | where_exp: "item", "item.category == 'tips'" %}
 {% assign quests = guides-type-not-filtered | where_exp: "item", "item.category == 'quests'" %}
 {% assign sanctuaries = guides-type-not-filtered | where_exp: "item", "item.category == 'sanctuaries'" %}
@@ -13,9 +15,17 @@ category: main
 {% assign gear-id = 0 %}
 
 
+guides-game-not-filtered <br/>
+<ul>
+{% for guide1 in guides-game-not-filtered %}
+<li>{{guide.name}}</li>
+{% endfor %}
+</ul
+
+
 guides-type-not-filtered <br/>
 <ul>
-{% for guide in guides-type-not-filtered %}
+{% for guide2 in guides-type-not-filtered %}
 <li>{{guide.name}}</li>
 {% endfor %}
 </ul>
