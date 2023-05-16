@@ -24,7 +24,6 @@ category: main
                 <h4 id="gears">Equipo</h4>
                 <div class="uk-grid uk-margin-remove uk-padding-remove uk-grid-small">
                     {% for gear in gears %}
-
                         {% assign gear-id = gear-id | plus: 1 %}
                         <div class="uk-width-1-3@m uk-padding-remove">
                             <div class="uk-card uk-card-default uk-padding-remove" uk-toggle="target: #gear-{{gear-id}}-body">
@@ -39,7 +38,6 @@ category: main
                                     </div>
                                 </div> 
                                 <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-remove" hidden>
-                                    
                                     <p class="uk-padding-small">
                                         {{gear.description}}
                                     </p>
@@ -65,7 +63,6 @@ category: main
                                                 <td class="uk-background-primary">
                                                 </td>
                                                 <td class="uk-background-primary">
-                                                    
                                                     <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">  
                                                     {{gear.stats-level-0:}}
                                                 </td>
@@ -96,7 +93,7 @@ category: main
 
                                                         {% for material-id in baked-materials limit:1 %}
                                                             {{material-id}}
-                                                            {% assign material = site.articles | find: "item.material-id", "material-id" %} 
+                                                            {% assign material = site.articles | find_exp: "item", "item.material-id == material-id" %} 
                                                             {{material.name}}
                                                              x
                                                         {% endfor %}  
@@ -157,6 +154,7 @@ category: main
                                     </table>
                                 </div>
                             </div>
+                       </div>
                        </div>
 
                     {% endfor %}
