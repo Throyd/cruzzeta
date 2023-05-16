@@ -91,16 +91,15 @@ category: main
                                                    {% assign crude-materials = gear.materials-level-1  | split: ", "%}
 
                                                     {% for crude-material in crude-materials %}
-                                                        {{crude-material}}
                                                     {% assign baked-materials = crude-material | split: " x "%}
                                                         
                                                         REAL BAKED: <br>
-                                                    {% for baked-materials in (1) %}
+                                                    {% for 1 in (baked-materials) %}
                                                         {{ baked-materials }}
                                                     {% endfor %}
 
                                                         X
-                                                    {% for baked-materials in (2) %}
+                                                    {% for 2 in (baked-materials) %}
                                                         {{ baked-materials }}
                                                     {% endfor %}
 
