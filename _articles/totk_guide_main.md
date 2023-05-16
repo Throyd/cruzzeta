@@ -71,10 +71,10 @@ category: main
                                             </tr>
                                             <tr>
                                                 <td class="uk-background-muted">
-                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png" witdt: 16px>
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png" witdth: 16px>
                                                 </td>
                                                 <td class="uk-background-muted">
-                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png">
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width:"16">  
                                                     {{gear.stats-level-1}}
                                                 </td>
                                                 <td class="uk-background-muted">
@@ -83,11 +83,11 @@ category: main
                                             </tr>
                                             <tr>
                                                 <td class="uk-background-muted">
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png" witdth: 16px>
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png" witdth: 16px>
                                                 </td>
                                                 <td class="uk-background-muted">
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Armor_Icon.png?raw=true" width:"16"> 
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width:"16">  
                                                     {{gear.stats-level-2}}
                                                 </td>
                                                 <td class="uk-background-muted">
@@ -96,12 +96,12 @@ category: main
                                             </tr>
                                             <tr>
                                                 <td class="uk-background-muted">
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">                                                    
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png" witdth: 16px>
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png" witdth: 16px>
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png" witdth: 16px>        
                                                 </td>
                                                 <td class="uk-background-muted">
-                                                <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Armor_Icon.png?raw=true" width:"16">  
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width:"16">  
                                                 {{gear.stats-level-3}}
                                                 </td>
                                                 <td class="uk-background-muted">
