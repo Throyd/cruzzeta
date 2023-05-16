@@ -60,9 +60,11 @@ category: main
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="uk-background-muted"></td>
+                                                <td class="uk-background-muted">
+                                                </td>
                                                 <td class="uk-background-muted">
                                                     {{gear.stats-level-0:}}
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">  
                                                 </td>
                                                 <td class="uk-background-muted">
                                                     {{gear.material-stats-level-0}}
@@ -70,11 +72,11 @@ category: main
                                             </tr>
                                             <tr>
                                                 <td class="uk-background-muted">
-                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png" witdth: 16px>
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Key_Item_Icon.png"  width="16" height="16">
                                                 </td>
                                                 <td class="uk-background-muted">
-                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width:"16">  
                                                     {{gear.stats-level-1}}
+                                                    <img src="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" width="16" height="16">  
                                                 </td>
                                                 <td class="uk-background-muted">
                                                     {{gear.materials-stats-level-1}}
