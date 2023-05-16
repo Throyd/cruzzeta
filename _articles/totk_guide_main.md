@@ -79,7 +79,7 @@ category: main
                                                     {{gear.stats-level-1}}
                                                 </td>
                                                 <td>
-                                                    {{gear.material-stats-level-1}}
+                                                    {{gear.materials-stats-level-1}}
                                                 </td>
                                             </tr>
                                             <tr>
@@ -92,7 +92,7 @@ category: main
                                                     {{gear.stats-level-2}}
                                                 </td>
                                                 <td>
-                                                    {{gear.stats-level-2}}
+                                                    {{gear.materials-stats-level-2}}
                                                 </td>
                                             </tr>
                                             <tr>
@@ -102,10 +102,11 @@ category: main
                                                     <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">                                                    
                                                 </td>
                                                 <td>
-                                                <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Armor_Icon.png?raw=true" width:"16">  {{gear.stats-level-3}}
+                                                <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Armor_Icon.png?raw=true" width:"16">  
+                                                {{gear.stats-level-3}}
                                                 </td>
                                                 <td>
-                                                    {{material.stats-level-3}}
+                                                    {{materials.stats-level-3}}
                                                 </td>
                                             </tr>                                            
                                         </tbody>
