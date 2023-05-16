@@ -41,7 +41,67 @@ category: main
                                     </div>
                                 </div> 
                                 <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-small" hidden>
-                                    {{gear.content}}
+                                    
+                                    <p>{{gear.description}}</p>
+
+                                    <strong>Adquisición:</strong> {{gear.adquisition}}
+                                    
+                                    <table class="uk-table uk-table-middle uk-table-divider">
+                                        <thead>
+                                            <tr>
+                                                <th class="uk-width-small">Nivel</th>
+                                                <th>Estadísticas</th>
+                                                <th>Materiales</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td>{{stats-level-0:}}</td>
+                                                <td>{{material.stats-level-0}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
+
+                                                    
+                                                </td>
+                                                <td>
+                                                <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Armor_Icon.png?raw=true" width:"16">  {{gear.stats-level-1}}
+                                                </td>
+                                                <td>
+                                                    {{material.stats-level-1}}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
+                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
+
+                                                    
+                                                </td>
+                                                <td>
+                                                <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Armor_Icon.png?raw=true" width:"16">  {{gear.stats-level-2}}
+                                                </td>
+                                                <td>
+                                                    {{material.stats-level-2}}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
+                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
+                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">                                                    
+                                                </td>
+                                                <td>
+                                                <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Armor_Icon.png?raw=true" width:"16">  {{gear.stats-level-3}}
+                                                </td>
+                                                <td>
+                                                    {{material.stats-level-3}}
+                                                </td>
+                                            </tr>                                            
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                        </div>
