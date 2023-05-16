@@ -34,14 +34,13 @@
 
 			<div class="uk-width-1-1@m" id="game-content">
 
-				{% assign reviews-not-filtered = site.articles | where_exp:"item", "item.game-id == page.game-id" %}
-				{% assign reviews = reviews-not-filtered | where_exp:"item", "item.type == 'review'"}}
+				{% assign reviews-game-not-filtered = site.articles | where_exp:"item", "item.game-id == page.game-id" %}
+				{% assign reviews = reviews-game-not-filtered | where_exp:"item", "item.type == 'review'"}}
 
-
-				
-
-				{% assign guide = site.articles | find_exp:"item", "item.navigation == 'main-page'" %}	
-			
+				{% assign guide-game-not-filtered = site.articles | find_exp:"item", "item", "item.game-id == page.game-id" %}
+				{% assign guide-type-not-filtered = guide-game-not-filtered | where_exp:"item", "item.type == 'guide'"%}
+				{% assign guide = guide-type-not-filtered | where_exp:"item", "item.navigation == 'main-page'"%}
+		
 				<ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
 					<li><a href="#">Análisis</a></li>
 					<li><a href="#">Guía</a></li>
