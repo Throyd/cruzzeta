@@ -33,8 +33,8 @@
 				{% assign reviews = reviews-game-not-filtered | where_exp:"item", "item.type == 'review'"%}
 
 				{% assign guide-game-not-filtered = site.articles | where_exp: "item", "item.game-id == page.game-id" %}
-				{% assign guide-type-not-filtered = guide-game-not-filtered | where_exp:"item", "item.type == 'guide'"%}
-				{% assign guides = guide-type-not-filtered | where_exp: "item", "item.category == 'main-page'"%}
+				{% assign guide-type-not-filtered = guide-game-not-filtered | where_exp:"item", "item.type == guide"%}
+				{% assign guide = guide-type-not-filtered | where_exp: "item", "item.category == main-page"%}
 				
 		
 				<ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
@@ -76,13 +76,15 @@
 					</li>
 					<li id="guide">
 						<br/>GUIDE NOT FILTERED<br/>
-						{% for guide in guide-game-not-filtered %}
-						{{guide.name}}
+						{% for guide1 in guide-game-not-filtered %}
+						{{guide1.name}}
 						{% endfor %}
 						<br/>GUIDE TYPE NOT FILTERED<br/>
-						{% for guide in guide-type-not-filtered %}
-						{{guide.name}}
+						{% for guide2 in guide-type-not-filtered %}
+						{{guide2.name}}
 						{% endfor %}
+						<br/>
+						{{guide.content}}
 					</li>
 				</ul>
 			</div>
