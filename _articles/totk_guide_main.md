@@ -90,20 +90,16 @@ category: main
 
                                                    {% assign crude-materials = gear.materials-level-1  | split: ", "%}
 
-
                                                     {% for crude-material in crude-materials %}
-                                                        CRUDE MATERIAL <br />
-                                                        {{crude-material}} <br />
+                                                        CRUDE MATERIAL<br />
+                                                        {{crude-material}}<br>
+                                                        {$assign baked-materials = crude-material | split: " x " %}
+                                                        {% for baked-material as baked-materials %}
+                                                            BAKED MATERIAL<br />
+                                                            {{baked-material}}
 
-                                                        {% assign materials = crude-material | split: " x "  %}
-
-                                                        MATERIALS<br />
-                                                        {% for material as materials %}
-                                                        {{material}} <br>
-                                                        {%end for %}
-
-                                                    
-                                                   {% endfor %}
+                                            
+                                                      {% endfor %}
                                                    {% endfor %}                                               
                                                 
 
