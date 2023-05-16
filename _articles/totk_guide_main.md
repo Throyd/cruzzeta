@@ -15,7 +15,7 @@ category: main
 {% assign gear-id = 0 %}
 <div>
     <div class="uk-grid">
-        <div class="uk-width-3-4@m">
+        <div class="uk-width-4-5@m">
             <div>
                 <h4 id="tips">Consejos</h4>
                 <h4 id="quests">Misiones</h4>
@@ -26,7 +26,7 @@ category: main
                     {% for gear in gears %}
 
                         {% assign gear-id = gear-id | plus: 1 %}
-                        <div class="uk-width-4-5@m uk-padding-remove">
+                        <div class="uk-width-1-3@m uk-padding-remove">
                             <div class="uk-card uk-card-default uk-padding-remove" uk-toggle="target: #gear-{{gear-id}}-body">
                                 <div class="uk-grid uk-padding-remove">
                                     <div class="uk-width-3-4">
