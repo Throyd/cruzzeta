@@ -27,11 +27,6 @@
 				</div>
 			</div>
 
-
-
-
-
-
 			<div class="uk-width-1-1@m" id="game-content">
 
 				{% assign reviews-game-not-filtered = site.articles | where_exp:"item", "item.game-id == page.game-id" %}
@@ -49,9 +44,10 @@
 				
 				<ul class="uk-switcher uk-margin">
 					<li id="reviews">
-						<ul uk-accordion="multiple: true">
+						<ul uk-accordion="multiple: false">
+
 							{% for review in reviews %}
-							<li class="">
+							<li>
 								<a class="uk-accordion-title" href="#">
 									<div class="uk-card uk-padding-remove uk-margin-remove">
 										<div class="uk-card-header uk-padding-remove uk-margin-remove">
@@ -74,12 +70,14 @@
 							</li>
 							<hr class="uk-divider-icon">
 							{% endfor %}
+
 						</ul>
 					</li>
 					<li id="guide">
 						{{guide.content}}
 					</li>
 				</ul>
+
 			</div>
 		</div>		
 	</body>
