@@ -34,11 +34,11 @@
 
 				{% assign guides-game-not-filtered = site.articles | where_exp: "item", "item.game-id == page.game-id" %}
 				{% assign guides-type-not-filtered = guides-game-not-filtered | where_exp: "item", "item.type == 'guide'" %}
-
+				{% assing guide = guides-game-not-filtered | "item", "item.category == 'main-page'" %}
 				
 				<br/>GUIDE NOT FILTERED<br/>
 				{% for guide1 in guides-game-not-filtered %}
-				{{guide1.name}}
+				{{guide1.name}}<br />
 				{% endfor %}
 				<br/>GUIDE TYPE NOT FILTERED<br/>
 				{% for guide2 in guides-type-not-filtered %}
@@ -87,7 +87,7 @@
 						</ul>
 					</li>
 					<li id="guide">
-
+						{{guide.content}}
 					</li>
 				</ul>
 			</div>
