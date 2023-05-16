@@ -34,8 +34,8 @@
 
 			<div class="uk-width-1-1@m">
 
-				{% assign reviews = site.articles | where_exp:"item", "item.game-id == page.game-id" | "item.type == review" %}
-				{% assign main-page-guide = site.articles | find_exp:"item", "item.game-id == page.game-id" | "item.type == guide" | "item.navigation == main-page" %}		
+				{% assign reviews = site.articles | where_exp:"item", "item.game-id == page.game-id" & "item.type == review" %}
+				{% assign main-page-guide = site.articles | find_exp:"item", "item.game-id == page.game-id" & "item.type == guide" & "item.navigation == main-page" %}		
 
 
 				<ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
