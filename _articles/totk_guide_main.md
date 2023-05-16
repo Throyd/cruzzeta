@@ -2,7 +2,7 @@
 game-id: TLOZ-TOTK
 name: Página principal de la guía
 type: guide
-category: main-page
+category: main
 ---
 Esto es la guía
 <div class="uk-grid">

@@ -34,7 +34,7 @@
 
 				{% assign guides-game-not-filtered = site.articles | where_exp: "item", "item.game-id == page.game-id" %}
 				{% assign guides-type-not-filtered = guides-game-not-filtered | where_exp: "item", "item.type == 'guide'" %}
-				{% assign guide = guides-game-not-filtered | find_exp: "item", "item.category == 'main-page'" %}
+				{% assign guide = guides-game-not-filtered | find_exp: "item", "item.category == 'main'" %}
 				
 				<br/>GUIDE NOT FILTERED<br/>
 				{% for guide1 in guides-game-not-filtered %}
@@ -44,10 +44,9 @@
 				{% for guide2 in guides-type-not-filtered %}
 				{{guide2.name}}
 				{% endfor %}
-				<br/>
-				{{guide.content}}
-				
-				
+				<br/>GUIDE<br />
+				{{guide.name}}
+			
 
 				<ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
 					<li><a href="#">Análisis</a></li>
