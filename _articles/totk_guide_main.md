@@ -93,7 +93,8 @@ category: main
 
                                                     CRUDE MATERIAL
                                                     {% for crude-material in crude-materials %}
-                                                        {{ crude-materials }} <br />
+                                                        CRUDE MATERIAL <br />
+                                                        {{ crude-material }} <br />
                                
                                                     
                                                         {% assign materials = crude-material | split: " x "  %}
