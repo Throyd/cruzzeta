@@ -15,7 +15,7 @@ category: main
 {% assign gear-id = 0 %}
 <div>
     <div class="uk-grid">
-        <div class="uk-width-3-4">
+        <div class="uk-width-3-4@m">
             <div>
                 <h4 id="tips">Consejos</h4>
                 <h4 id="quests">Misiones</h4>
@@ -26,7 +26,7 @@ category: main
                     {% for gear in gears %}
 
                         {% assign gear-id = gear-id | plus: 1 %}
-                        <div class="uk-width-1-2 uk-margin-remove uk-padding-remove">
+                        <div class="uk-width-1-2@m uk-margin-remove uk-padding-remove">
                             <div class="uk-card uk-card-default uk-padding-small uk-margin-remove" uk-toggle="target: #gear-{{gear-id}}-body">
                                 <div class="uk-grid uk-margin-remove uk-padding-remove">
                                     <div class="uk-width-3-4">
@@ -72,10 +72,10 @@ category: main
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
+                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
                                                 </td>
                                                 <td>
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Armor_Icon.png?raw=true" width:"16">  
+                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Armor_Icon.png?raw=true" width:"16">  
                                                     {{gear.stats-level-1}}
                                                 </td>
                                                 <td>
@@ -84,11 +84,11 @@ category: main
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
+                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
+                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
                                                 </td>
                                                 <td>
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Armor_Icon.png?raw=true" width:"16"> 
+                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Armor_Icon.png?raw=true" width:"16"> 
                                                     {{gear.stats-level-2}}
                                                 </td>
                                                 <td>
@@ -97,12 +97,12 @@ category: main
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
-                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">                                                    
+                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
+                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">
+                                                    <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Key_Item_Icon.png?raw=true" width:"16">                                                    
                                                 </td>
                                                 <td>
-                                                <img src="https://github.com/Throyd/cruzzeta/blob/main/_images/tloz-totk/UI_Armor_Icon.png?raw=true" width:"16">  {{gear.stats-level-3}}
+                                                <img src="https://github.com/Throyd/cruzzeta/blob/main/images/tloz-totk/UI_Armor_Icon.png?raw=true" width:"16">  {{gear.stats-level-3}}
                                                 </td>
                                                 <td>
                                                     {{material.stats-level-3}}
@@ -118,7 +118,7 @@ category: main
                 </div>
             </div>
         </div>
-        <div class="uk-width-1-4">
+        <div class="uk-width-1-4@m uk-first@m">
             <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: !.uk-height-large; offset: 80">
                 <ul class="uk-nav-default" uk-nav>
                     <li class="uk-active">
