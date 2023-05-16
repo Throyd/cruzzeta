@@ -33,7 +33,7 @@ category: main
                                         {{gear.name}}
                                     </h3>
                                 </div> 
-                                <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-small">
+                                <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-small" hidden>
                                     {{gear.content}}
                                 </div>
                             </div>
