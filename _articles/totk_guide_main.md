@@ -79,50 +79,20 @@ category: main
                                                     {{gear.stats-level-1}}
                                                 </td>
                                                 <td class="uk-background-primary">
-
-
-
-
-
-
-                                                   {% assign crude-materials = gear.materials-level-1  | split: ", "%}
-
+                                                    {% assign crude-materials = gear.materials-level-1  | split: ", "%}
                                                     {% for crude-material in crude-materials %}
                                                     {% assign baked-materials = crude-material | split: " x "%}
-                                                        
-
                                                         {% for material-id in baked-materials limit:1 %}
-                                                            {{material-id}}
                                                             {% assign materials = site.articles | where_exp: "item", "item.material-id == material-id" %} 
                                                             {% for material in materials %}
                                                                 <img src="{{material.icon}}" alt="{{material.name}}" height="18" width="18" uk-tooltip="{{material.name}}">
-                                                            x
+                                                                x
                                                             {% endfor %}
                                                         {% endfor %}  
-                                                            {% for quantity in baked-materials limit:1 offset: 1 %}
+                                                        {% for quantity in baked-materials limit:1 offset: 1 %}
                                                             {{quantity}} <br />
                                                         {% endfor %}  
-                                                        {% endfor %}                                             
-                                                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                   
+                                                    {% endfor %}                                             
                                                 </td>
                                             </tr>
                                             <tr>
@@ -135,7 +105,20 @@ category: main
                                                     {{gear.stats-level-2}}
                                                 </td>
                                                 <td class="uk-background-primary">
-                                                    {{gear.materials-level-2}}
+                                                    {% assign crude-materials = gear.materials-level-2  | split: ", "%}
+                                                    {% for crude-material in crude-materials %}
+                                                    {% assign baked-materials = crude-material | split: " x "%}
+                                                        {% for material-id in baked-materials limit:1 %}
+                                                            {% assign materials = site.articles | where_exp: "item", "item.material-id == material-id" %} 
+                                                            {% for material in materials %}
+                                                                <img src="{{material.icon}}" alt="{{material.name}}" height="18" width="18" uk-tooltip="{{material.name}}">
+                                                                x
+                                                            {% endfor %}
+                                                        {% endfor %}  
+                                                        {% for quantity in baked-materials limit:1 offset: 1 %}
+                                                            {{quantity}} <br />
+                                                        {% endfor %}  
+                                                    {% endfor %}    
                                                 </td>
                                             </tr>
                                             <tr>
@@ -149,15 +132,27 @@ category: main
                                                     {{gear.stats-level-3}}
                                                 </td>
                                                 <td class="uk-background-primary">
-                                                    {{gear.materials-level-3}}
+                                                    {% assign crude-materials = gear.materials-level-3  | split: ", "%}
+                                                    {% for crude-material in crude-materials %}
+                                                    {% assign baked-materials = crude-material | split: " x "%}
+                                                        {% for material-id in baked-materials limit:1 %}
+                                                            {% assign materials = site.articles | where_exp: "item", "item.material-id == material-id" %} 
+                                                            {% for material in materials %}
+                                                                <img src="{{material.icon}}" alt="{{material.name}}" height="18" width="18" uk-tooltip="{{material.name}}">
+                                                                x
+                                                            {% endfor %}
+                                                        {% endfor %}  
+                                                        {% for quantity in baked-materials limit:1 offset: 1 %}
+                                                            {{quantity}} <br />
+                                                        {% endfor %}  
+                                                    {% endfor %}    
                                                 </td>
                                             </tr>                                           
                                         </tbody>
                                     </table>
-
-                       
-                       
-
+                                </div>
+                            </div>
+                        </div>
                     {% endfor %}
                 </div>
             </div>
