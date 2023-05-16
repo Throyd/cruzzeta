@@ -12,24 +12,12 @@ category: main
 {% assign tips = site.articles | find_exp:"item", "item.game-id == page.game-id" | "item.type == guide" | "item.category == gear" %}
 
 
-<div class="uk-background-muted uk-height-large">
+<div>
 
     <div class="uk-grid">
         <div class="uk-width-3-4">
-            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index " uk-sticky="end: 200; offset: 80">200px</div>
-        </div>
-
-        <div class="uk-width-1-4">
-            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: !.uk-height-large; offset: 80">Selector</div>
-        </div>
-    </div>
-
-</div>
-
-
-<div class="uk-grid">
-    <div class="uk-width-3-4@m">
-        <h4 id="tips">Consejos</h4>
+            <div>
+      <h4 id="tips">Consejos</h4>
         <h4 id="quests">Misiones</h4>
         <h4 id="sanctuaries">Santuarios</h4>
         <h4 id="temples">Templos</h4>
@@ -82,9 +70,13 @@ category: main
         a <br/>
         a <br/>
         a <br/>
-    </div>
-    <div class="uk-width-1-4@m uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: !.uk-height-large; offset: 80">
-        <ul class="uk-nav-default" uk-nav>
+            </div>
+        </div>
+
+        <div class="uk-width-1-4">
+            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: !.uk-height-large; offset: 80">
+            
+            <ul class="uk-nav-default" uk-nav>
             <li class="uk-active">
                 <a href="#tips">Consejos</a>
             </li>
@@ -101,8 +93,14 @@ category: main
                 <a href="#gears">Equipo</a></div>
             </li>
         </ul>
+        
+        </div>
+        </div>
     </div>
+
 </div>
+
+
 
 
 
