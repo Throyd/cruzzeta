@@ -15,12 +15,12 @@ category: main
 <div class="uk-background-muted uk-height-large">
 
     <div class="uk-grid">
-        <div>
-            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index uk-width-3-4" uk-sticky="end: 200; offset: 80">200px</div>
+        <div class="uk-width-3-4">
+            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index " uk-sticky="end: 200; offset: 80">200px</div>
         </div>
 
-        <div>
-            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index uk-width-1-4" uk-sticky="end: !.uk-height-large; offset: 80">Selector</div>
+        <div class="uk-width-1-4">
+            <div class="uk-card uk-card-default uk-card-body uk-text-center uk-position-z-index" uk-sticky="end: !.uk-height-large; offset: 80">Selector</div>
         </div>
     </div>
 
