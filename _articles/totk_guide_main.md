@@ -102,7 +102,7 @@ category: main
                                                             {{material}} x
                                                         {% endfor %}  
                                                                                                                                                {% for quantity in baked-materials limit:1 offset: 1 %}
-                                                            {{quantity}} x
+                                                            {{quantity}} 
                                                         {% endfor %}  
 
                                                         {% endfor %}                                             
