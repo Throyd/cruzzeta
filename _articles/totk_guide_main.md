@@ -27,7 +27,7 @@ category: main
 
                         {% assign gear-id = gear-id | plus: 1 %}
                         <div class="uk-width-1-2">
-                            <div class="uk-card uk-card-default uk-padding-small" uk-toggle="target: #gear-{{gear-id}}-body">
+                            <div class="uk-card uk-card-default uk-padding-small uk-margin-remove" uk-toggle="target: #gear-{{gear-id}}-body">
                                 <div class="uk-card-header">
                                     <h3 class="uk-card-title uk-margin-remove-bottom">
                                         {{gear.name}}
