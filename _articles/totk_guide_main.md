@@ -15,7 +15,7 @@ category: main
 {% assign gear-id = 0 %}
 <div>
     <div class="uk-grid">
-        <div class="uk-width-4-5@m">
+        <div class="uk-width-4-5@m uk-grid-small">
             <div>
                 <h4 id="tips">Consejos</h4>
                 <h4 id="quests">Misiones</h4>
@@ -43,9 +43,9 @@ category: main
                                     <p class="uk-padding-small">
                                         {{gear.description}}
                                     </p>
-
-                                    <strong>Adquisición:</strong> {{gear.adquisition}}
-                                    
+                                    <p class="uk-padding-small">
+                                        <strong>Adquisición:</strong> {{gear.adquisition}}
+                                    <p class="uk-padding-small">
                                     <table class="uk-table uk-table-divider uk-text-center uk-light uk-padding-small">
                                         <thead class="uk-dark">
                                             <tr>
