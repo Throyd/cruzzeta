@@ -1,6 +1,6 @@
 ---
 game-id: TLOZ-TOTK
-material-id: rupee-green
+material-id: rupee
 name: Rupia
 type: guide
 category: material
