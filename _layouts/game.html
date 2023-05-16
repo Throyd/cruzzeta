@@ -32,12 +32,10 @@
 
 
 
-			<div class="uk-width-1-1@m">
+			<div class="uk-width-1-1@m" id="game-content">
 
-
-				{% assign guide = site.articles | find:"item", "item.game-id == page.game-id and item.type == guide and item.navigation == main-page" %}		
-
-				{% assign reviews = site.articles | where:"item", "item.game-id == page.game-id and item.type == review" %}
+				{% assign reviews = site.articles | where:"item", "item.game-id == page.game-id" %}
+				{% assign guide = site.articles | find:"item", "item.navigation == main-page" %}		
 				
 				<ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
 					<li><a href="#">Análisis</a></li>
