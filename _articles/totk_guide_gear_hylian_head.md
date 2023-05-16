@@ -15,7 +15,7 @@ stats-level-3: "?"
 bonus: "?"
 
 description: Una capucha con motivos hylianos.
-icon: https://raw.githubusercontent.com/Throyd/cruzzeta/main/images/tloz-totk/Hylian_Hood_Icon.png
+icon: https://throyd.github.io/cruzzeta/images/tloz-totk/Hylian_Hood_Icon.png
 ---
 Una capucha con motivos Hylianos.
 
