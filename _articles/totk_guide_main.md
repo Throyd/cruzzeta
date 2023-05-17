@@ -14,5 +14,3 @@ category: main
 {% assign sets = gears | map: 'set' | uniq %}
 {% assign gear-id = 0 %}
 {% include totk_guide_main.html %}
-
-                {% include totk_guide_gear.html %}
