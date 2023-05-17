@@ -23,7 +23,7 @@ category: main
                 <h4 id="quests">Misiones</h4>
                 <h4 id="sanctuaries">Santuarios</h4>
                 <h4 id="temples">Templos</h4>
-                {% assign GEAR = site.articles | where:"id", "totk_guide_gear.md" | first %}
+                {% assign GEAR = site.articles | where:"id", "articles/totk_guide_gear" | first %}
                 {{ GEAR.content }}
             </div>
         </div>
