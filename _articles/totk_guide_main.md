@@ -29,41 +29,31 @@ category: main
                 <h4 id="temples">Templos</h4>
                 <section class="uk-margin-bottom">
                     <h4 id="gears">Equipo</h4>
-
-
-<div uk-filter="target: .js-filter">
-    <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
-        <div>
-            <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                <li class="uk-active" uk-filter-control><a href="#">Todos</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                <li uk-filter-control="filter: [data-slot='head']; group: data-slot"><a href="#">Cabeza</a></li>
-                <li uk-filter-control="filter: [data-slot='chest']; group: data-slot"><a href="#">Pecho</a></li>
-                <li uk-filter-control="filter: [data-slot='legs']; group: data-slot"><a href="#">Piernas</a></li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <ul class="uk-subnav uk-subnav-pill" uk-margin>
-
-                <li>
-                    <a href="#">Conjuntos <span uk-icon="icon: triangle-down"></span></a>
-                    <div uk-dropdown="mode: click">
-                        <ul class="uk-nav uk-dropdown-nav">
-                            {% for set in sets %}
-                                <li uk-filter-control="filter: [data-set='Traje aéreo']; group: data-set"><a href="#">Traje Aéreo</a></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <ul class="js-filter uk-grid-small" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: false">
+                    <div uk-filter="target: .js-filter">
+                        <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
+                            <div>
+                                <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                                    <li class="uk-active" uk-filter-control><a href="#">Todos</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                                    <li uk-filter-control="filter: [data-slot='head']; group: data-slot"><a href="#">Cabeza</a></li>
+                                    <li uk-filter-control="filter: [data-slot='chest']; group: data-slot"><a href="#">Pecho</a></li>
+                                    <li uk-filter-control="filter: [data-slot='legs']; group: data-slot"><a href="#">Piernas</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div uk-filter="target: .js-filter">    
+                            <div>
+                                <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                                    {% for set in sets %}
+                                        <li uk-filter-control="filter: [data-set='{{set}}']; group: data-set"><a href="#">{{set}}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="js-filter uk-grid-small" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: false">
                             {% for gear in gears %}
                             <li class="uk-width-1-3@m" data-slot="{{gear.slot}}" data-set="{{gear.set}}">
                             {% assign gear-id = gear-id | plus: 1 %}
