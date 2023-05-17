@@ -48,9 +48,17 @@ category: main
         <br>
         <div>
             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                {% for set in sets %}
-                    <li uk-filter-control="filter: [data-set='Traje aéreo']; group: data-set"><a href="#">Traje Aéreo</a></li>
-                {% endfor %}
+
+                <li>
+                    <a href="#">Conjuntos <span uk-icon="icon: triangle-down"></span></a>
+                    <div uk-dropdown="mode: click">
+                        <ul class="uk-nav uk-dropdown-nav">
+                            {% for set in sets %}
+                                <li uk-filter-control="filter: [data-set='Traje aéreo']; group: data-set"><a href="#">Traje Aéreo</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
