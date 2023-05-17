@@ -30,7 +30,7 @@ category: main
                             <li uk-filter-control="[data='chest']"><a href="#">Pecho</a></li>
                             <li uk-filter-control="[data='legs']"><a href="#">Piernas</a></li>
                         </ul>
-                        <ul class="js-filter uk-text-center uk-grid-small" uk-grid>
+                        <ul class="js-filter uk-text-center uk-grid-small uk-grid-match" uk-grid>
                             {% for gear in gears %}
                             <li class="uk-width-1-3@m" data="{{gear.slot}}">
                             {% assign gear-id = gear-id | plus: 1 %}
