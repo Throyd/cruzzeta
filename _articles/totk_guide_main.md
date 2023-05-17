@@ -21,7 +21,7 @@ category: main
                 <h4 id="quests">Misiones</h4>
                 <h4 id="sanctuaries">Santuarios</h4>
                 <h4 id="temples">Templos</h4>
-                <section class="uk-margin-small-bottom">
+                <section class="uk-margin-bottom">
                     <h4 id="gears">Equipo</h4>
                     <div uk-filter="target: .js-filter">
                         <ul class="uk-subnav uk-subnav-pill">
