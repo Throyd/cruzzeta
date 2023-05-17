@@ -58,8 +58,8 @@ category: main
                             <li class="uk-width-1-3@m" data-slot="{{gear.slot}}" data-set="{{gear.set}}">
                             {% assign gear-id = gear-id | plus: 1 %}
                                 <div class="uk-card uk-card-default" uk-toggle="target: #gear-{{gear-id}}-body">
-                                    <div class="uk-grid uk-padding-remove">
-                                        <div class="uk-width-3-4">
+                                    <div class="uk-grid uk-padding-remove uk-grid-match">
+                                        <div class="uk-width-3-4" style="height: 110px">
                                             <p class="uk-margin-remove uk-padding-small">
                                                 <strong>{{gear.name}}</strong>
                                             </p>
