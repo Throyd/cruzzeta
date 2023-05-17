@@ -21,32 +21,24 @@ category: main
                 <h4 id="quests">Misiones</h4>
                 <h4 id="sanctuaries">Santuarios</h4>
                 <h4 id="temples">Templos</h4>
-                <h4 id="gears">Equipo</h4>
-
-<div uk-filter="target: .js-filter">
-
-    <ul class="uk-subnav uk-subnav-pill">
-        <li class="uk-active" uk-filter-control><a href="#">All</a></li>
-        <li uk-filter-control="[data='head']"><a href="#">Cabeza</a></li>
-        <li uk-filter-control="[data='chest']"><a href="#">Pecho</a></li>
-        <li uk-filter-control="[data='legs']"><a href="#">Piernas</a></li>
-    </ul>
-
-    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center uk-grid-small" uk-grid>
-        {% for gear in gears %}
-        <li data-color="{{gear.slot}}">
-            <div class="uk-card uk-card-default uk-card-body">{{gear.name}}}}</div>
-        </li>
-        {% endfor %}
-    </ul>
-
-</div>
-
-
-
-
-
-                </div>
+                <section>
+                    <h4 id="gears">Equipo</h4>
+                    <div uk-filter="target: .js-filter">
+                        <ul class="uk-subnav uk-subnav-pill">
+                            <li class="uk-active" uk-filter-control><a href="#">Todos</a></li>
+                            <li uk-filter-control="[data='head']"><a href="#">Cabeza</a></li>
+                            <li uk-filter-control="[data='chest']"><a href="#">Pecho</a></li>
+                            <li uk-filter-control="[data='legs']"><a href="#">Piernas</a></li>
+                        </ul>
+                        <ul class="js-filter uk-text-center uk-grid-small" uk-grid>
+                            {% for gear in gears %}
+                            <li data="{{gear.slot}}">
+                                <div class="uk-card uk-card-default uk-card-body">{{gear.name}}</div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </section>
             </div>
         </div>
         <div class="uk-width-1-5@m uk-first@m">
