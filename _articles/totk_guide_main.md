@@ -40,20 +40,21 @@ category: main
         </div>
         <div>
             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                <li uk-filter-control="filter: [data-slot='head']; group: data-color"><a href="#">Cabeza</a></li>
-                <li uk-filter-control="filter: [data-slot='chest']; group: data-color"><a href="#">Pecho</a></li>
-                <li uk-filter-control="filter: [data-slot='legs']; group: data-color"><a href="#">Piernas</a></li>
+                <li uk-filter-control="filter: [data-slot='head']; group: data-slot"><a href="#">Cabeza</a></li>
+                <li uk-filter-control="filter: [data-slot='chest']; group: data-slot"><a href="#">Pecho</a></li>
+                <li uk-filter-control="filter: [data-slot='legs']; group: data-slot"><a href="#">Piernas</a></li>
             </ul>
         </div>
-    </div>
-       <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
+        <br>
+        <div>
             <ul class="uk-subnav uk-subnav-pill" uk-margin>
                 {% for set in sets %}
-                    <li uk-filter-control="filter: [data-set='{{set}}']; group: size"><a href="#">{{set}}</a></li>
+                    <li uk-filter-control="filter: [data-set='Traje aéreo']; group: data-set"><a href="#">Traje Aéreo</a></li>
                 {% endfor %}
             </ul>
         </div>
     </div>
+
     <ul class="js-filter uk-grid-small" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: false">
                             {% for gear in gears %}
                             <li class="uk-width-1-3@m" data-slot="{{gear.slot}}" data-set="{{gear.set}}">
