@@ -13,11 +13,6 @@ category: main
 {% assign temples = guides-type-not-filtered | where_exp: "item", "item.category == 'temples'" %}
 {% assign gears = guides-type-not-filtered | where_exp: "item", "item.category == 'gears'" %}
 {% assign sets = gears | map: 'set' | uniq %}
-<ul>
-  {% for set in sets %}
-    <li>{{ set }}</li>
-  {% endfor %}
-</ul>
 {% assign gear-id = 0 %}
 <div>
     <div class="uk-grid">
@@ -27,7 +22,7 @@ category: main
                 <h4 id="quests">Misiones</h4>
                 <h4 id="sanctuaries">Santuarios</h4>
                 <h4 id="temples">Templos</h4>
-                {% assign GEAR = site.articles | where:"name", "totk_guide_gear" | first %}
+                {% assign GEAR = site.articles | where:"url", "totk_guide_gear" | first %}
                 {{ GEAR.content }}
             </div>
         </div>
