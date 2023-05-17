@@ -42,7 +42,7 @@ category: main
                                             </p>
                                         </div>
                                         <div class="uk-width-1-4 uk-card-media-right uk-cover-container">
-                                                    <img src="{{gear.icon}}" alt="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" uk-tooltip="{{gear.name}}">
+                                                    <img src="{{gear.icon}}" uk-tooltip="{{gear.name}}">
                                             </div>
                                         </div> 
                                         <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-remove" hidden>
