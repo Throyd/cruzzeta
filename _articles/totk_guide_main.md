@@ -30,7 +30,7 @@ category: main
                 <section class="uk-margin-bottom">
                     <h4 id="gears">Equipo</h4>
                     <div uk-filter="target: .js-filter">
-                        <div class="uk-grid-small uk-grid-divider uk-child-width-auto uk-margin-remove" uk-grid>
+                        <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
                             <div>
                                 <ul class="uk-subnav uk-subnav-pill" uk-margin>
                                     <li class="uk-active" uk-filter-control><a href="#">Todos</a></li>
