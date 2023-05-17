@@ -43,7 +43,6 @@ category: main
                                         </div>
                                         <div class="uk-width-1-4 uk-card-media-right uk-cover-container">
                                                     <img src="{{gear.icon}}" uk-tooltip="{{gear.name}}" uk-cover>
-                                                    <canvas width="54" height="54"></canvas>
                                             </div>
                                         </div> 
                                         <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-remove" hidden>
