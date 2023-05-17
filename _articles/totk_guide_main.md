@@ -30,7 +30,7 @@ category: main
                             <li uk-filter-control="[data='chest']"><a href="#">Pecho</a></li>
                             <li uk-filter-control="[data='legs']"><a href="#">Piernas</a></li>
                         </ul>
-                        <ul class="js-filter uk-grid-small" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
+                        <ul class="js-filter uk-grid-small" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: false">
                             {% for gear in gears %}
                             <li class="uk-width-1-3@m" data="{{gear.slot}}">
                             {% assign gear-id = gear-id | plus: 1 %}
@@ -42,7 +42,7 @@ category: main
                                             </p>
                                         </div>
                                         <div class="uk-width-1-4 uk-card-media-right uk-cover-container">
-                                                    <img src="{{gear.icon}}" uk-tooltip="{{gear.name}}">
+                                                    <img src="{{gear.icon}}" uk-tooltip="{{gear.name}}" width="54" height="54">
                                             </div>
                                         </div> 
                                         <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-remove" hidden>
