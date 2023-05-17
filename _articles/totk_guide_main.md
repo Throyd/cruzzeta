@@ -13,4 +13,4 @@ category: main
 {% assign gears = guides-type-not-filtered | where_exp: "item", "item.category == 'gears'" %}
 {% assign sets = gears | map: 'set' | uniq %}
 {% assign gear-id = 0 %}
-{% include totk_guide_main %}
+{% include totk_guide_main.html %}
