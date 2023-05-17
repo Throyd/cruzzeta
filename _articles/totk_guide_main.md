@@ -4,6 +4,7 @@ name: Página principal de la guía
 type: guide
 category: main
 ---
+{{ page.id }}
 <h3>Página principal de la guía</h3>
 {% assign guides-game-not-filtered = site.articles | where_exp: "item", "item.game-id == page.game-id" %}
 {% assign guides-type-not-filtered = guides-game-not-filtered | where_exp: "item", "item.type == 'guide'" %}
@@ -22,7 +23,7 @@ category: main
                 <h4 id="quests">Misiones</h4>
                 <h4 id="sanctuaries">Santuarios</h4>
                 <h4 id="temples">Templos</h4>
-                {% assign GEAR = site.articles | where:"path", "/_articles/totk_guide_gear.md" | first %}
+                {% assign GEAR = site.articles | where:"id", "totk_guide_gear.md" | first %}
                 {{ GEAR.content }}
             </div>
         </div>
