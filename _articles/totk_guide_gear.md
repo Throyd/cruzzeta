@@ -1,3 +1,9 @@
+---
+game-id: TLOZ-TOTK
+name: Equipo
+type: guide
+category: sub-main
+---
                 <section class="uk-margin-bottom">
                     <h4 id="gears">Equipo</h4>
                     <div uk-filter="target: .js-filter">
