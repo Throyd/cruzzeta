@@ -13,9 +13,6 @@ category: main
 {% assign temples = guides-type-not-filtered | where_exp: "item", "item.category == 'temples'" %}
 {% assign gears = guides-type-not-filtered | where_exp: "item", "item.category == 'gears'" %}
 {% assign sets = gears | map: 'set' | uniq %}
-{% for set in sets %}
-{{set}}
-{% endfor %}
 <ul>
   {% for item in titles %}
     <li>{{ item }}</li>
@@ -48,13 +45,15 @@ category: main
                 <li uk-filter-control="filter: [data-slot='legs']; group: data-color"><a href="#">Piernas</a></li>
             </ul>
         </div>
-        <div>
+    </div>
+       <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                <li uk-filter-control="filter: [data-set='Traje aéreo']; group: size"><a href="#">Traje Aéreo</a></li>
+                {% for set in sets %}
+                    <li uk-filter-control="filter: [data-set='{{set}}']; group: size"><a href="#">{{set}}</a></li>
+                {% endfor %}
             </ul>
         </div>
     </div>
-
     <ul class="js-filter uk-grid-small" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: false">
                             {% for gear in gears %}
                             <li class="uk-width-1-3@m" data-slot="{{gear.slot}}" data-set="{{gear.set}}">
