@@ -37,14 +37,14 @@ category: main
                                 </ul>
                             </div>
                             <div>
-                                <ul class="uk-subnav uk-subnav-pill uk-margin-small-top uk-margin-bottom">
+                                <ul class="uk-subnav uk-subnav-pill uk-margin-small">
                                     <li uk-filter-control="filter: [data-slot='head']; group: data-slot"><a href="#">Cabeza</a></li>
                                     <li uk-filter-control="filter: [data-slot='chest']; group: data-slot"><a href="#">Pecho</a></li>
                                     <li uk-filter-control="filter: [data-slot='legs']; group: data-slot"><a href="#">Piernas</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="uk-grid-small uk-grid-divider uk-child-width-auto uk-margin-remove" uk-grid>    
+                        <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>    
                             <div>
                                 <ul class="uk-subnav uk-subnav-pill" uk-margin>
                                     {% for set in sets %}
