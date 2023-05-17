@@ -23,16 +23,32 @@ category: main
                 <h4 id="temples">Templos</h4>
                 <section class="uk-margin-bottom">
                     <h4 id="gears">Equipo</h4>
-                    <div uk-filter="target: .js-filter">
-                        <ul class="uk-subnav uk-subnav-pill">
-                            <li class="uk-active" uk-filter-control><a href="#">Todos</a></li>
-                            <li uk-filter-control="[data='head']"><a href="#">Cabeza</a></li>
-                            <li uk-filter-control="[data='chest']"><a href="#">Pecho</a></li>
-                            <li uk-filter-control="[data='legs']"><a href="#">Piernas</a></li>
-                        </ul>
-                        <ul class="js-filter uk-grid-small" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: false">
+
+
+
+
+
+
+            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                <li class="uk-active" uk-filter-control><a href="#">Todos</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                <li uk-filter-control="filter: [data-slot='head']; group: data-color"><a href="#">Cabeza</a></li>
+                <li uk-filter-control="filter: [data-slot='chest']; group: data-color"><a href="#">Pecho</a></li>
+                <li uk-filter-control="filter: [data-slot='legs']; group: data-color"><a href="#">Piernas</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                <li uk-filter-control="filter: [data-set='Traje Aerodinámico']; group: size"><a href="#">Traje Aerodinámico</a></li>
+            </ul>
+
+
+                      <ul class="js-filter uk-grid-small" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: false">
                             {% for gear in gears %}
-                            <li class="uk-width-1-3@m" data="{{gear.slot}}">
+                            <li class="uk-width-1-3@m" data-slot="{{gear.slot}}" data-set="{{gear.set}}">
                             {% assign gear-id = gear-id | plus: 1 %}
                                 <div class="uk-card uk-card-default" uk-toggle="target: #gear-{{gear-id}}-body">
                                     <div class="uk-grid uk-padding-remove">
