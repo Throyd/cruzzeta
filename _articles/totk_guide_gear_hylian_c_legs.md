@@ -3,7 +3,7 @@ game-id: TLOZ-TOTK
 name: Pantalón hyliano
 type: guide
 category: gears
-slot: chest
+slot: legs
 set: Armadura hyliana
 stats-level-0: "3"
 materials-level-1: bokoblin-horn x 5, rupee x 10
