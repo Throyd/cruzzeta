@@ -17,3 +17,4 @@ adquisition: "Se puede adquirir en <strong>Fuerte Vigía</strong> por <strong>70
 description: Prenda tradicional en todo Hyrule. Gracias a su tejido, resistente a la par que suave, resulta bastante cómoda.
 icon: https://throyd.github.io/cruzzeta/images/tloz-totk/Hylian_Trousers_Icon.png
 ---
+blank

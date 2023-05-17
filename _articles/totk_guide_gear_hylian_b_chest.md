@@ -17,4 +17,4 @@ adquisition: "Se puede adquirir en <strong>Fuerte Vigía</strong> por <strong>70
 description: Prenda común y popular en todo Hyrule. Su tejido y resistente ligero facilita los movimientos.
 icon: https://throyd.github.io/cruzzeta/images/tloz-totk/Hylian_Tunic_Icon.png
 ---
-
+blank

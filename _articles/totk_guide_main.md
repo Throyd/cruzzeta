@@ -22,9 +22,21 @@ category: main
                 <h4 id="sanctuaries">Santuarios</h4>
                 <h4 id="temples">Templos</h4>
                 <h4 id="gears">Equipo</h4>
-                <div class="uk-grid uk-grid-small">
+
+<div uk-filter="target: .js-filter">
+
+    <ul class="uk-subnav uk-subnav-pill">
+        <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+        <li uk-filter-control="[data-color='head']"><a href="#">White</a></li>
+        <li uk-filter-control="[data-color='chest']"><a href="#">Blue</a></li>
+        <li uk-filter-control="[data-color='legs']"><a href="#">Black</a></li>
+    </ul>
+
+    <ul class="js-filter uk-child-width-1-2 uk-grid-small" uk-grid>
+
                     {% for gear in gears %}
                         {% assign gear-id = gear-id | plus: 1 %}
+                        <li data-color="{{gear.slot}} {{gear.set}}">
                         <div class="uk-width-1-3@m">
                             <div class="uk-card uk-card-default" uk-toggle="target: #gear-{{gear-id}}-body">
                                 <div class="uk-grid uk-padding-remove">
@@ -34,7 +46,7 @@ category: main
                                         </p>
                                     </div>
                                     <div class="uk-width-1-4 uk-card-media-right uk-cover-container">
-                                            <img src="{{gear.icon}}">
+                                            <img src="{{gear.icon}}" alt="https://throyd.github.io/cruzzeta/images/tloz-totk/UI_Armor_Icon.png" uk-tooltip="{{gear.name}}">
                                     </div>
                                 </div> 
                                 <div id="gear-{{gear-id}}-body" class="uk-card-body  uk-padding-remove" hidden>
@@ -153,7 +165,10 @@ category: main
                                 </div>
                             </div>
                         </div>
+                        </li>
                     {% endfor %}
+                
+    </ul>
                 </div>
             </div>
         </div>

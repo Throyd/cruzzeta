@@ -17,4 +17,4 @@ adquisition: "Se puede adquirir en <strong>Fuerte Vigía</strong> por <strong>70
 description: Capucha tejida con materiales resistentes usando métodos hylianos tradicionales.
 icon: https://throyd.github.io/cruzzeta/images/tloz-totk/Hylian_Hood_Icon.png
 ---
-
+blank
