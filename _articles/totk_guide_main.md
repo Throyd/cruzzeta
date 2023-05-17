@@ -44,7 +44,7 @@ category: main
                                 </ul>
                             </div>
                         </div>
-                        <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>    
+                        <div class="uk-grid-small uk-grid-divider uk-child-width-auto uk-margin-remove" uk-grid>    
                             <div>
                                 <ul class="uk-subnav uk-subnav-pill" uk-margin>
                                     {% for set in sets %}
