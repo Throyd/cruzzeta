@@ -14,8 +14,8 @@ category: main
 {% assign gears = guides-type-not-filtered | where_exp: "item", "item.category == 'gears'" %}
 {% assign sets = gears | map: 'set' | uniq %}
 <ul>
-  {% for item in titles %}
-    <li>{{ item }}</li>
+  {% for set in sets %}
+    <li>{{ set }}</li>
   {% endfor %}
 </ul>
 {% assign gear-id = 0 %}
